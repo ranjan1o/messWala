@@ -65,7 +65,7 @@ const LandingPage = () => {
                         variants={item}
                         style={{ backgroundColor: 'rgb(255, 113, 19)' }}
                     >
-                       <NavLink to="/user" ><RiUserShared2Fill className={styles.hover} /></NavLink>
+                       <NavLink to="/messes" ><RiUserShared2Fill className={styles.hover} /></NavLink>
                         <br />
                         <br />
                         <br />

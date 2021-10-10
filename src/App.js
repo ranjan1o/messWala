@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="App">
       <Switch>
-        <Route exact path="/home">
+        <Route exact path="/">
           <LandingPage />
         </Route>
         <Route  path="/messes">
