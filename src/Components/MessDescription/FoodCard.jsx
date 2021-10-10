@@ -35,7 +35,7 @@ export default function FoodCard() {
   return <A>
     {data.map((e) => {
     
-      return <Card sx={{ maxWidth: 345 }} onClick={() => {
+      return <Card key={e._id} sx={{ maxWidth: 345 }} onClick={() => {
         console.log(e.user_id._id)
         dispatch(getMessProfile(e.user_id._id))
         setTimeout(() => {

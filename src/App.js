@@ -12,6 +12,7 @@ import MessInfo from "./Components/MessDescription/Messinfo";
 import UserMessProfile from "./Components/userMessProfile/UserMessProfile";
 import Navbar from "./Components/MessDescription/Navbar";
 import MessProfile from "./Components/MessProfile/MessProfile"
+import { WelcomeAdmin } from "./Components/messform/Welcomeadmin"
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
           <div><MainDisplay/></div>
         </Route>
         <Route exact path="/admin">
-          <div><Navbar/></div>
+          <div><Navbar/><WelcomeAdmin/></div>
         </Route>
         <Route exact path="/ranjan">
           <div>

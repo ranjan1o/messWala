@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import TextField from '@mui/material/TextField';
 import { useState } from 'react';
-
+import { useLocation } from 'react-router-dom';
 import { useDispatch, useSelector, shallowEqual } from 'react-redux';
 import { regUser } from '../../Redux/auth/action';
 const style = {
@@ -41,6 +41,8 @@ const btn = {
     marginTop: '10px',
 };
 export function Signup() {
+    const current_Location = useLocation();
+    console.log(current_Location,"jchjdschjds")
     const dispatch = useDispatch();
     const {
         auth: { user },
@@ -53,7 +55,7 @@ export function Signup() {
         last_name: '',
         email: '',
         password: '',
-        roles: ['user'],
+        roles: current_Location === "/messes" ? ["user"] : ["admin", "user"]
     });
     const handleChange = (e) => {
         const { name, value } = e.target;
