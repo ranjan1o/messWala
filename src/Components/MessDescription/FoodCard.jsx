@@ -16,6 +16,14 @@ import { useDispatch } from "react-redux";
 import { getMessProfile } from "../../Redux/auth/action";
 
 const A = styled.div`
+display: flex;
+  flex-wrap: wrap;
+  flex-flow: wrap;
+  margin:auto;
+  .price{
+    margin:10px 5px;
+  
+  }
 `
 export default function FoodCard() {
   const history = useHistory()
@@ -35,7 +43,7 @@ export default function FoodCard() {
   return <A>
     {data.map((e) => {
     
-      return <Card key={e._id} sx={{ maxWidth: 345 }} onClick={() => {
+      return <Card style={{ flexBasis: "500px", margin: "10px auto"}} key={e._id} sx={{ maxWidth: 345 }} onClick={() => {
         console.log(e.user_id._id)
         dispatch(getMessProfile(e.user_id._id))
         setTimeout(() => {
@@ -58,24 +66,24 @@ export default function FoodCard() {
         </Typography>
 
         <div className={styles.description_card}>
-          <button className={styles.chatbtn}>chat</button>
+
           <div className={styles.star_rating}>
             <AiOutlineStar />
                 <p style={{ marginTop: "-1px" }}>{ e.reviews}</p>
           </div>
 
           <div>
-            <p>35 MINS</p>
+            <p>28 mins</p>
           </div>
 
           <div>
-            <p>₹500 FOR TWO</p>
+              <p className="price">{ e.priceList}</p>
           </div>
         </div>
       </CardContent>
        <div>
           
-          <p>Gandhi nagar Bhopal</p>
+          <p>{ e.city}</p>
        </div>
     </Card>
       })}

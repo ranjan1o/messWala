@@ -5,7 +5,7 @@ const FoodItem = () => {
         <>
            <div className={styles.fooditem_main}>
                <div>
-                   <h1>1174 restaurants</h1>
+                   <h1>restaurants</h1>
                </div>
               
               <div className={styles.fooditem_filter}>

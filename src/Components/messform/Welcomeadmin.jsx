@@ -1,7 +1,7 @@
 import styled from "styled-components"
 const A1 = styled.div`
 h1{
-    width:90%
+    width:90%;
     margin:auto;
     text-align: center;
 }
@@ -19,7 +19,7 @@ img{
    margin:auto;
 }
 p{
-      width:70%;
+    width:70%;
     margin:auto;
     text-align: center;
 
