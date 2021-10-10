@@ -5,11 +5,11 @@ const FoodItem = () => {
         <>
            <div className={styles.fooditem_main}>
                <div>
-                   <h1>restaurants</h1>
+                   <h1 style={{color: "blue", fontSize: "32px"}}>Mess according to your search.</h1>
                </div>
               
               <div className={styles.fooditem_filter}>
-              <h2 style={{marginTop:"25px"}}>Filter By</h2>
+              {/* <h2 style={{marginTop:"25px"}}>Filter By</h2> */}
               <div className={styles.sort_buttons}>
                   
                   <button>Relevance</button>

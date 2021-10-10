@@ -42,7 +42,7 @@ const btn = {
 };
 export function Signup() {
     const current_Location = useLocation();
-    console.log(current_Location,"jchjdschjds")
+    console.log(current_Location, 'jchjdschjds');
     const dispatch = useDispatch();
     const {
         auth: { user },
@@ -55,7 +55,7 @@ export function Signup() {
         last_name: '',
         email: '',
         password: '',
-        roles: current_Location === "/messes" ? ["user"] : ["admin", "user"]
+        roles: current_Location === '/messes' ? ['user'] : ['admin', 'user'],
     });
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -67,6 +67,7 @@ export function Signup() {
     console.log(payload);
     const handleSave = () => {
         dispatch(regUser(payload));
+        alert('Registered Successfully');
         // axios.post("http://localhost:8000/users/signup", payload).then((res) => {
         //     console.log(res)
         // })
