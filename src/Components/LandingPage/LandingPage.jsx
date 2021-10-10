@@ -3,7 +3,7 @@ import styles from './LandingPage.module.css';
 import { RiUserShared2Fill } from 'react-icons/ri';
 import { DiYeoman } from 'react-icons/di';
 import { motion } from 'framer-motion';
-import { NavLink } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
 const container = {
     hidden: { opacity: 1, scale: 0 },
@@ -26,33 +26,39 @@ const item = {
 };
 
 const LandingPage = () => {
-    const [city, setCity] = useState("");
-    console.log(city)
+    const [city, setCity] = useState('');
+    console.log(city);
 
     return (
         <div className={styles.main}>
             <div className={styles.left}>
-                <img
-                    src="https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Swiggy_logo.svg/1200px-Swiggy_logo.svg.png"
-                    alt=""
-                    width="200px"
-                    height="50px"
-                />
+                <img src="logo2.jpg" alt="" width="120px" height="120px" />
                 <br />
                 <br />
                 <h1>Hungry?</h1>
-                <p>Order food from favorite restaurants near you.</p>
+                <p style={{ color: '#f5569b' }}>
+                    Order food from favorite mess near you.
+                </p>
                 <br />
                 <input
                     className={styles.searchBar}
                     type="text"
-                   onChange={(e)=>setCity(e.target.value)}
+                    onChange={(e) => setCity(e.target.value)}
                     placeholder="Enter your delivery location"
                 />
-                    <button><NavLink to={`/messes?q=${city}`} style={{textDecoration:"none",color:"white"}}> FIND FOOD</NavLink></button>
-                <p style={{ fontSize: 19, marginTop: 20 }}>
+                <button>
+                    <NavLink
+                        to={`/messes?q=${city}`}
+                        style={{ textDecoration: 'none', color: 'white' }}
+                    >
+                        {' '}
+                        FIND FOOD
+                    </NavLink>
+                </button>
+                {/* <p style={{ fontSize: 19, marginTop: 20 }}>
                     POPULAR CITIES IN INDIA
-                </p>
+                </p> */}
+                <br />
                 <br />
                 <br />
                 <motion.div
@@ -63,9 +69,11 @@ const LandingPage = () => {
                 >
                     <motion.div
                         variants={item}
-                        style={{ backgroundColor: 'rgb(255, 113, 19)' }}
+                        style={{ backgroundColor: '#f5569b' }}
                     >
-                       <NavLink to="/messes" ><RiUserShared2Fill className={styles.hover} /></NavLink>
+                        <NavLink to="/messes">
+                            <RiUserShared2Fill className={styles.hover} />
+                        </NavLink>
                         <br />
                         <br />
                         <br />
@@ -73,13 +81,15 @@ const LandingPage = () => {
                     </motion.div>
                     <motion.div
                         variants={item}
-                        style={{ backgroundColor: 'rgb(255, 113, 19)' }}
+                        style={{ backgroundColor: '#f5569b' }}
                     >
-                        <NavLink to="/admin" ><DiYeoman className={styles.hover} /></NavLink>
+                        <NavLink to="/admin">
+                            <DiYeoman className={styles.hover} />
+                        </NavLink>
                         <br />
                         <br />
                         <br />
-                        <p>MESSwala</p>
+                        <p>MessWaala</p>
                     </motion.div>
                 </motion.div>
             </div>

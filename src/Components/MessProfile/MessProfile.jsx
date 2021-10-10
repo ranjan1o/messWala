@@ -238,6 +238,7 @@ const MessProfileStyled = styled.div`
   }
   .bio {
     height: auto;
+    margin: auto;
     padding: 1rem 16rem;
     display: grid;
     grid-template-columns: 1fr;

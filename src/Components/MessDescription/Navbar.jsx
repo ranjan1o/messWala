@@ -97,10 +97,7 @@ export default function Navbar() {
             }}
             open={isMenuOpen}
             onClose={handleMenuClose}
-        >
-            {/* <MenuItem onClick={handleMenuClose}><Login/></MenuItem>
-      <MenuItem onClick={handleMenuClose}><Signup/></MenuItem> */}
-        </Menu>
+        ></Menu>
     );
 
     const mobileMenuId = 'primary-search-account-menu-mobile';
@@ -120,26 +117,6 @@ export default function Navbar() {
             open={isMobileMenuOpen}
             onClose={handleMobileMenuClose}
         >
-            {/* <MenuItem>
-        <IconButton size="large" aria-label="show 4 new mails" color="inherit">
-          <Badge badgeContent={4} color="error">
-            <MailIcon />
-          </Badge>
-        </IconButton>
-        <p>Messages</p>
-      </MenuItem>
-      <MenuItem>
-        <IconButton
-          size="large"
-          aria-label="show 17 new notifications"
-          color="inherit"
-        >
-          <Badge badgeContent={17} color="error">
-            <NotificationsIcon />
-          </Badge>
-        </IconButton>
-        <p>Notifications</p>
-      </MenuItem> */}
             <MenuItem onClick={handleProfileMenuOpen}>
                 <IconButton
                     size="large"
@@ -168,14 +145,14 @@ export default function Navbar() {
                     >
                         <MenuIcon />
                     </IconButton>
-                    <Typography
-                        variant="h6"
-                        noWrap
-                        component="div"
-                        sx={{ display: { xs: 'none', sm: 'block' } }}
-                    >
-                        Messwala
-                    </Typography>
+                    <img
+                        height="70"
+                        width="200"
+                        style={{ borderRadius: '50%' }}
+                        src="https://i.ibb.co/wzDt65V/Whats-App-Image-2021-10-09-at-8-33-38-PM.jpg"
+                        alt=""
+                    />
+
                     <Search>
                         <SearchIconWrapper>
                             <SearchIcon />
@@ -188,14 +165,22 @@ export default function Navbar() {
                     <Box sx={{ flexGrow: 1 }} />
                     <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
                         <MenuItem
-                            sx={{ fontSize: '19px', fontWeight: 'bold', width: "80px" }}
+                            sx={{
+                                fontSize: '24px',
+                                fontWeight: 'bold',
+                                width: '110px',
+                            }}
                             onClick={handleMenuClose}
                         >
                             Login
                             <Login />
                         </MenuItem>
                         <MenuItem
-                            sx={{ fontSize: '19px', fontWeight: 'bold', width: "100px" }}
+                            sx={{
+                                fontSize: '24px',
+                                fontWeight: 'bold',
+                                width: '120px',
+                            }}
                             onClick={handleMenuClose}
                         >
                             Signup

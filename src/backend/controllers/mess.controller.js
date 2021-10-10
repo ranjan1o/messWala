@@ -26,7 +26,12 @@ router.patch('/:id', authenticate, authorize(["admin"]), async (req, res) => {
 })
 
 router.get('', async (req, res) => {
-    const mess = await Mess.find().populate("user_id").lean().exec()
+    const city = req.query.q || false;
+    var mess = await Mess.find().populate("user_id").lean().exec()
+    console.log(req.query.q);
+    if(city){
+         mess = await Mess.find({city: city}).lean().exec()
+    }
     return res.status(200).json({ mess })
 })
 router.get('/:id', async (req, res) => {
