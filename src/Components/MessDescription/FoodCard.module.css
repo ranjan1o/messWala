@@ -1,0 +1,26 @@
+.star_rating {
+  display: flex;
+  height: 15px;
+  width: 40px;
+  background-color: green;
+  padding: 2px;
+  color: white;
+  border-radius: 3px;
+  margin-top: 12px;
+  margin-left: -25px;
+}
+
+.description_card {
+  display: flex;
+  justify-content: space-around;
+}
+.chatbtn {
+  position: absolute;
+  bottom: 10px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+}

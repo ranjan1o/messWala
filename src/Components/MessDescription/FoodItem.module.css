@@ -1,0 +1,33 @@
+.fooditem_main {
+  height: 8vh;
+  /* border: 1px solid red; */
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 0px 0px 30px;
+  margin-top: 10px;
+}
+
+.sort_buttons {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.sort_buttons > button {
+  border: none;
+  height: 35px;
+  width: auto;
+  font-size: 15px;
+  background: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.sort_buttons > button:hover {
+  background: whitesmoke;
+}
+.fooditem_filter {
+  display: flex;
+  gap: 10px;
+}

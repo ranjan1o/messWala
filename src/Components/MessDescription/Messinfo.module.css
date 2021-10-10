@@ -1,0 +1,49 @@
+.messinfo_main{
+    display: flex;
+    justify-content: space-evenly;
+    padding:0px;
+    color:#171A29;
+    background-color:#dadef0;
+    height:32vh;
+    /* color: white; */
+    width: 100%;
+}
+
+.star_rating {
+    display: flex;
+    padding: 2px;
+    /* color: white; */
+    border-radius: 3px;
+    margin-top: 12px;
+    margin-left: -45px; 
+    font-size:25px;
+    font-weight:300;
+    /* font-family: ProximaNova,Arial,Helvetica Neue,sans-serif; */
+  }
+
+  .information{
+    display: flex;
+    justify-content:space-around;
+  }
+
+  .off_offer{
+      height: 15vh;
+      border: 1px solid #171A29;
+      width: 310px;
+      padding: 31px 40px 25px 25px;
+  }
+  .messinfo_image{
+      width: 25%;
+    
+      padding: 20px 0px 0px 50px;
+      margin-left: 100px;
+  }
+  .messinfo_description{
+    width: 30%;
+   
+  }
+  .messinfo_offers{
+    width: 35%;
+    margin-top:-5px;
+  }
+
