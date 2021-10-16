@@ -58,7 +58,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     },
 }));
 
-export default function Navbar() {
+export default function Navbar2() {
     const history=useHistory()
     const [anchorEl, setAnchorEl] = React.useState(null);
     const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
@@ -83,7 +83,7 @@ export default function Navbar() {
         setMobileMoreAnchorEl(event.currentTarget);
     };
     const handleClik = () => {
-        history.push("/messes")
+        history.push("/admin")
     }
 
     const menuId = 'primary-search-account-menu';

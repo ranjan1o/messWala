@@ -18,6 +18,7 @@ import MealsSection from "./MealsSection";
 import OverView from "./OverView";
 import { getData } from "../../utils/localStorage";
 import { MessForm } from "../messform/MessForm";
+import Contact from "./Contact"
 import {
     makeStyles,
     createMuiTheme,
@@ -120,6 +121,7 @@ function MessProfile() {
                 </div>
                 {tabValue === "one" ? <OverView mess={mess} /> : ""}
                 {tabValue === "two" ? <MealsSection mess={mess} /> : ""}
+                {tabValue === "four" ? <Contact mess={mess} /> : ""}
 
             </MessProfileStyled>
         </MainLayOut>

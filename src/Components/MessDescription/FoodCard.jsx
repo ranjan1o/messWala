@@ -80,7 +80,8 @@ export default function FoodCard() {
                             <div className={styles.description_card}>
                                 <div
                                     style={{
-                                        marginLeft: '-138px',
+                                        paddingLeft: "5px",
+                                        marginLeft: '5px',
                                         fontSize: '15px',
                                         fontWeight: 'bold',
                                     }}

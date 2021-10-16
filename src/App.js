@@ -13,6 +13,7 @@ import UserMessProfile from "./Components/userMessProfile/UserMessProfile";
 import Navbar from "./Components/MessDescription/Navbar";
 import MessProfile from "./Components/MessProfile/MessProfile"
 import { WelcomeAdmin } from "./Components/messform/Welcomeadmin"
+import Navbar2 from "./Components/MessDescription/Navbar2";
 
 function App() {
   return (
@@ -29,10 +30,10 @@ function App() {
         </Route>
         <Route exact path="/ranjan">
           <div>
-          <UserMessProfile/></div>
+          <Navbar/><UserMessProfile/></div>
         </Route>
         <Route exact path="/admin/create">
-          <div><MessProfile/></div>
+          <div><Navbar2/><MessProfile/></div>
         </Route>
       </Switch>
       {/* <MessProfile /> */}

@@ -8,6 +8,7 @@ export const GlobalStyles = createGlobalStyle`
 
 body {
   margin: 0;
+  font-family: 'Rajdhani', sans-serif;
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

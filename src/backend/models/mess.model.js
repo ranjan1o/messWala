@@ -13,6 +13,8 @@ const messSchema = new mongoose.Schema({
     breakFastTiming: { type: String, required: true },
     priceList: { type: String, required: true },
     reviews: [{ type: String, required: false }],
+    mobile_no: { type: Number, required: false },
+    address:{ type: String, required: false },
     user_id: { type: mongoose.Schema.Types.ObjectId, ref: "user", required: true }
 
 })

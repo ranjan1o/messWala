@@ -56,6 +56,8 @@ export function CreateNewMessForm({
         review: "",
         speciality: "",
         title: "",
+        mobil_no: "",
+        address:""
 
     });
     const handleChange = (e) => {
@@ -119,6 +121,18 @@ export function CreateNewMessForm({
                             defaultValue={payload.title}
                         />
                     </div>
+                      <div>
+                        <TextField
+                            name="mobile_no"
+                            label="mobile no"
+                            className="inputfield"
+                            onChange={handleChange}
+                            color="secondary"
+                            type="number"
+                            fullWidth
+                            defaultValue={payload.mobile_no}
+                        />
+                    </div>
                     <div>
                         <TextField
                             name="description"
@@ -128,6 +142,17 @@ export function CreateNewMessForm({
                             color="secondary"
                             fullWidth
                             defaultValue={payload.description}
+                        />
+                    </div>
+                     <div>
+                        <TextField
+                            name="address"
+                            label="Adddress"
+                            className="inputfield"
+                            onChange={handleChange}
+                            color="secondary"
+                            fullWidth
+                            defaultValue={payload.address}
                         />
                     </div>
                     <ImageSelectStyled>

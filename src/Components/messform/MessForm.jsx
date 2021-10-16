@@ -55,6 +55,8 @@ export function MessForm({
         review: mess.review || "",
         speciality: mess.speciality || "",
         title: mess.title || "",
+        mobile_no: mess.mobile_no || "",
+        address:mess.address||""
 
     });
     const handleChange = (e) => {
@@ -182,6 +184,17 @@ export function MessForm({
                             defaultValue={payload.speciality}
                         />
                     </div>
+                     <div>
+                        <TextField
+                            name="mobile_no"
+                            label="mobile no"
+                            className="inputfield"
+                            onChange={handleChange}
+                            color="secondary"
+                            fullWidth
+                            defaultValue={payload.mobile_no}
+                        />
+                    </div>
                     <div>
                         <FormControl fullWidth>
                             <InputLabel id="demo-simple-select-label">Delivery</InputLabel>
@@ -258,6 +271,17 @@ export function MessForm({
                             color="secondary"
                             fullWidth
                             defaultValue={payload.priceList}
+                        />
+                    </div>
+                     <div>
+                        <TextField
+                            name="address"
+                            label="Adddress"
+                            className="inputfield"
+                            onChange={handleChange}
+                            color="secondary"
+                            fullWidth
+                            defaultValue={payload.address}
                         />
                     </div>
 

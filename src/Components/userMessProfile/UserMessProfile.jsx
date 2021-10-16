@@ -14,6 +14,7 @@ import { useEffect } from "react";
 import UserMealsSection from "./UserMealSection";
 import UserOverView from "./UserOverView"
 import { getData } from "../../utils/localStorage";
+import Contact from "../MessProfile/Contact"
 
 import {
     makeStyles,
@@ -126,7 +127,8 @@ function UserMessProfile() {
                
             </div>
             {tabValue === "one" ? <UserOverView mess={mess} /> : ""}
-            {tabValue === "two" ? <UserMealsSection mess={mess} /> : ""}
+        {tabValue === "two" ? <UserMealsSection mess={mess} /> : ""}
+         {tabValue === "four" ? <Contact mess={mess} /> : ""}
 
         </MessProfileStyled>
     </MainLayOut>
@@ -194,6 +196,7 @@ const MessProfileStyled = styled.div`
   }
   .btns {
     margin-top: 1rem;
+    width:150%;
     display: flex;
     justify-content: space-between;
     padding-right: 35rem;
